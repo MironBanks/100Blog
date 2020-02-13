@@ -22,6 +22,8 @@ const Logo = styled.span`
   font-weight: 700;
   font-size: 20px;
   margin-right: 10px;
+  padding:15px;
+  background-color:white;
 `
 const NavigationList = styled.ul`
   padding:15px;
@@ -44,13 +46,13 @@ const Navigation = () => (
     </Logo>
     <NavigationList>
       <NavigationListItem>
-        <Link to="/articles">articles</Link>
-      </NavigationListItem>
-      <NavigationListItem>
         <Link to="/about">about</Link>
       </NavigationListItem>
       <NavigationListItem>
         <Link to="/projects">projects</Link>
+      </NavigationListItem>
+      <NavigationListItem>
+        <Link to="/articles">articles</Link>
       </NavigationListItem>
       <NavigationListItem>
         <Link to="/contact">contact</Link>
