@@ -5,7 +5,7 @@ import styled from "styled-components"
 import Button from "../components/Button/Button";
 
 const ContentWrapper = styled.div`
-  width: 60%;
+  width: 50%;
   height: calc(100vh - 80px);
   text-align: right;
   display: flex;
@@ -51,10 +51,10 @@ const FooterContainer = styled.div`
 
 const ImageWrapper = styled.img`
   position: absolute;
-  top: 0;
+  top:200px;
   right: 0;
-  width: 40%;
-  height: 100vh;
+  width: 45%;
+  height: 70vh;
   object-fit: cover;
 `;
 
@@ -76,9 +76,9 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-      file(name: {eq: "hero_4"}) {
+      file(name: {eq: "hero"}) {
       childImageSharp{
-        fluid(maxWidth:800, maxHeight:1200, quality:100) {
+        fluid(maxWidth:1200, maxHeight:800, quality:100) {
           src
           srcSet
           sizes

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const NavigationWrapper = styled.nav`
   position: fixed;
-  width:99%;
+  width:100%;
   top:20px;
   left:20px;
   display: flex;
@@ -27,13 +27,14 @@ const NavigationList = styled.ul`
   padding:15px;
   list-style: none;
   display: flex;
-  background-color: white;
+  background-color: black;
 `
 
 const NavigationListItem = styled.li`
   font-weight: 600;
   font-size: 15px;
   margin:0 16px;
+  color:white;
 `
 
 const Navigation = () => (
