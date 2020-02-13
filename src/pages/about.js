@@ -1,12 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout"
-
 const AboutPage = () => (
-  <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-  </Layout>
+  <>
+    <h1>Hi from the about page</h1>
+
+  </>
 )
 
 export default AboutPage

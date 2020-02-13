@@ -1,29 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-
-const StyledDiv = styled.div`
-  width: 100px;
-  height: 100px;
-  background-color: pink;
-`
+import Navigation from "../components/Navigation/Navigation"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StyledDiv />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+    <h1>Hello Miron</h1>
+  </>
 )
 
 export default IndexPage
