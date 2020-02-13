@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 
 const NavigationWrapper = styled.nav`
   position: fixed;
-  width:97%;
+  width:99%;
   top:20px;
   left:20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: "Montserrat";
+  z-index:20;
 
   a {
     text-decoration: none;
@@ -23,9 +24,10 @@ const Logo = styled.span`
   margin-right: 10px;
 `
 const NavigationList = styled.ul`
-
+  padding:15px;
   list-style: none;
   display: flex;
+  background-color: white;
 `
 
 const NavigationListItem = styled.li`
