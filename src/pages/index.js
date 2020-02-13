@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
-import Navigation from "../components/Navigation/Navigation"
+
 import Button from "../components/Button/Button";
 
 const ContentWrapper = styled.div`
@@ -22,7 +22,8 @@ const ContentWrapper = styled.div`
 
   p {
     margin: 60px 0 40px;
-    width: 40%;
+    width: 45%;
+    font-size:23px;
   }
 `;
 
@@ -62,21 +63,27 @@ const IndexPage = ({ data }) => (
     <ContentWrapper>
       <h1>One hundred days</h1>
       <p>
-        Even if You are on the right track You'll get run over if You just sit there.
+        Even if You are on the right track You'll get run over, if You just sit there.
       </p>
       <Button>estimate project</Button>
       <FooterContainer>
         <p>created by: mironbanks.com</p>
       </FooterContainer>
     </ContentWrapper>
-    <ImageWrapper src={data.file.publicURL} />
+    <ImageWrapper src={data.file.childImageSharp.fluid.src} srcSet={data.file.childImageSharp.fluid.srcSet} sizes={data.file.childImageSharp.fluid.sizes} />
   </>
 );
 
 export const query = graphql`
   {
-    file(name: {eq: "hero"}) {
-      publicURL
+      file(name: {eq: "hero_4"}) {
+      childImageSharp{
+        fluid(maxWidth:800, maxHeight:1200, quality:100) {
+          src
+          srcSet
+          sizes
+        }
+      }
     }
   }
 `
