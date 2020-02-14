@@ -8,6 +8,10 @@ const PreviewWrapper = styled.div`
   background-color: hsl(0, 0%, 95%);
   background-image: url(${({ background }) => background});
   background-size: cover;
+
+  @media only screen and (max-width: 1440px) {
+    height: 240px;
+  }
 `;
 
 const PreviewInfoLabel = styled.div`
@@ -23,6 +27,16 @@ const PreviewInfoLabel = styled.div`
   h2,
   p {
     margin: 5px;
+  }
+
+  @media only screen and (max-width: 1440px) {
+    h2{
+      font-size:15px;
+    }
+
+    p{
+      font-size:13px;
+    }
   }
 `;
 

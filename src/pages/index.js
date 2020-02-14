@@ -25,6 +25,18 @@ const ContentWrapper = styled.div`
     width: 45%;
     font-size:23px;
   }
+
+  @media only screen and (max-width: 1440px) {
+     h1 {
+        font-size: 65px;
+     }
+
+     p {
+        margin: 20px 0 40px;
+        font-size:16px;
+        width: 50%;
+     }
+  }
 `;
 
 const FooterContainer = styled.div`
@@ -56,6 +68,10 @@ const ImageWrapper = styled(Image)`
   width: 45%;
   height: 70vh;
   object-fit: cover;
+
+  @media only screen and (max-width: 1440px) {
+    top:150px; 
+  }
 `;
 
 const IndexPage = ({ data }) => (

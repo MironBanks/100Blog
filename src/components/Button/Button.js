@@ -8,6 +8,7 @@ const Button = styled.button`
   font-size: 13px;
   font-weight: 600;
   flex-shrink: 0;
+
 `;
 
 export default Button;

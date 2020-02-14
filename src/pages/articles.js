@@ -12,6 +12,10 @@ top:0;
 left:0;
 width:280px;
 height: 98%;
+
+@media only screen and (max-width: 1440px) {
+    width:230px;
+  }
 `;
 
 const BlackRight = styled.div`
@@ -21,6 +25,10 @@ bottom:0;
 left:55%;
 width:2px;
 height: 64%;
+
+@media only screen and (max-width: 1440px) {
+    left:66%; 
+  }
 `;
 
 const ArticlesWrapper = styled.div`
@@ -28,7 +36,13 @@ const ArticlesWrapper = styled.div`
   width:500px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 7    0px;
+  grid-gap: 70px;
+
+  @media only screen and (max-width: 1440px) {
+    margin-left:23%;
+    width:400px;
+    grid-gap: 70px;
+  }
 `;
 
 const pageData = {

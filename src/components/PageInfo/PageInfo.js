@@ -17,6 +17,19 @@ const Wrapper = styled.div`
     font-size: 23px;
     margin: 15px 0 0;
   }
+
+  @media only screen and (max-width: 1440px) {
+     left:70vw;
+
+     h1 {
+        font-size: 65px;
+     }
+
+     p {
+        font-size:16px;
+        width: 60%;
+     }
+  }
 `;
 
 const PageInfo = ({ title, paragraph }) => (
