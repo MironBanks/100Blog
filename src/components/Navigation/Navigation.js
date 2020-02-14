@@ -17,6 +17,8 @@ const NavigationWrapper = styled.nav`
     text-decoration: none;
     color: inherit;
   }
+
+  
 `
 const Logo = styled.span`
   font-weight: 700;
@@ -24,12 +26,21 @@ const Logo = styled.span`
   margin-right: 10px;
   padding:15px;
   background-color:white;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 15px;
+    padding:13px;
+  }
 `
 const NavigationList = styled.ul`
   padding:15px;
   list-style: none;
   display: flex;
   background-color: black;
+
+  @media only screen and (max-width: 1440px) {
+    padding:13px;
+  }
 `
 
 const NavigationListItem = styled.li`
@@ -37,6 +48,10 @@ const NavigationListItem = styled.li`
   font-size: 15px;
   margin:0 16px;
   color:white;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 13px;
+  }
 `
 
 const Navigation = () => (

@@ -28,7 +28,7 @@ const ArticlesWrapper = styled.div`
   width:500px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 50px;
+  grid-gap: 7    0px;
 `;
 
 const pageData = {
