@@ -33,6 +33,7 @@ height: 64%;
 
 const ArticlesWrapper = styled.div`
   margin-left:20%;
+  margin-bottom:60px;
   width:500px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -58,7 +59,7 @@ const ArticlesPage = ({ data }) => {
       <BlackLeft></BlackLeft>
       <ArticlesWrapper>
         {nodes.map(({ excerpt, frontmatter: { title, slug, featuredImage } }) => (
-          <ArticlePreview title={title} excerpt={excerpt} background={featuredImage.childImageSharp.fluid.src} />
+          <ArticlePreview title={title} excerpt={excerpt} image={featuredImage.childImageSharp.fluid} />
         ))}
       </ArticlesWrapper>
       <BlackRight></BlackRight>
@@ -79,7 +80,7 @@ export const query = graphql`
           featuredImage {
             childImageSharp {
               fluid(maxWidth: 700, maxHeight: 500) {
-                src
+                ...GatsbyImageSharpFluid_tracedSVG
               }
             }
           }

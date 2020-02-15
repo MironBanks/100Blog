@@ -18,6 +18,11 @@ const NavigationWrapper = styled.nav`
     color: inherit;
   }
 
+  @media only screen and (max-width: 500px) {
+    left: 0;
+    top: 0;
+  }
+
   
 `
 const Logo = styled.span`
@@ -26,6 +31,10 @@ const Logo = styled.span`
   margin-right: 10px;
   padding:15px;
   background-color:white;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 10px;
+  }
 
   @media only screen and (max-width: 1440px) {
     font-size: 15px;
@@ -37,6 +46,10 @@ const NavigationList = styled.ul`
   list-style: none;
   display: flex;
   background-color: black;
+
+  @media only screen and (max-width: 500px) {
+    display:none;
+  }
 
   @media only screen and (max-width: 1440px) {
     padding:13px;
