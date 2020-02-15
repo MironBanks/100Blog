@@ -59,7 +59,7 @@ const ArticlesPage = ({ data }) => {
       <BlackLeft></BlackLeft>
       <ArticlesWrapper>
         {nodes.map(({ excerpt, frontmatter: { title, slug, featuredImage } }) => (
-          <ArticlePreview title={title} excerpt={excerpt} image={featuredImage.childImageSharp.fluid} />
+          <ArticlePreview key={slug} title={title} excerpt={excerpt} image={featuredImage.childImageSharp.fluid} slug={slug} />
         ))}
       </ArticlesWrapper>
       <BlackRight></BlackRight>
