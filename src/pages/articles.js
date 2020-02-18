@@ -9,10 +9,10 @@ import PageInfo from '../components/PageInfo/PageInfo';
 const BlackLeft = styled.div`
 background-color:black;
 position:fixed;
-top:0;
+bottom:0;
 left:0;
 width:280px;
-height: 98%;
+height: 90%;
 
 @media only screen and (max-width: 1440px) {
     width:230px;
@@ -38,7 +38,7 @@ const ArticlesWrapper = styled.div`
   width:500px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 70px;
+  grid-gap: 120px;
 
   @media only screen and (max-width: 1440px) {
     margin-left:23%;

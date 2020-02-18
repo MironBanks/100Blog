@@ -6,17 +6,27 @@ import Button from "../components/Button/Button";
 
 const ContentWrapper = styled.div`
   width: 50%;
-  height: calc(100vh - 80px);
+  /*height: calc(100vh - 80px);*/
+  height:70vh;
+  position: absolute;
+  top:200px;
+  padding:25px;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  border-radius: 10px;
+
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.0);
 
   h1 {
     font-size: 105px;
     margin: 0;
     width: 60%;
+    padding:25px 0 25px auto;
     line-height: 0.9;
   }
 
@@ -44,7 +54,7 @@ const FooterContainer = styled.div`
   bottom:0;
   left: 20px;
   width:160px;
-  height: 190px;
+  height: 160px;
   background-color:black;
 
   display: flex;
@@ -90,11 +100,11 @@ const IndexPage = ({ data }) => (
       <p>
         Even if You are on the right track You'll get run over, if You just sit there.
       </p>
-      <Button>estimate project</Button>
-      <FooterContainer>
-        <p>created by: mironbanks.com</p>
-      </FooterContainer>
+      <Button>my last project</Button>
     </ContentWrapper>
+    <FooterContainer>
+      <p>created by: mironbanks.com</p>
+    </FooterContainer>
     <ImageWrapper fluid={data.file.childImageSharp.fluid} />
   </>
 );
