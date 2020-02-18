@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 80px 65px 0;
     font-family: 'Montserrat';
+    background-color: #F0F0F3;
   }
 
   button {

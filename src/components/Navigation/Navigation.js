@@ -30,7 +30,20 @@ const Logo = styled.span`
   font-size: 20px;
   margin-right: 10px;
   padding:15px;
-  background-color:white;
+  background-color: #F0F0F3;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.0);
+
+  &:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0 rgba(255,255,255,1),
+                0.5px 0.5px 0 rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+  }
 
   @media only screen and (max-width: 500px) {
     font-size: 10px;
@@ -45,7 +58,7 @@ const NavigationList = styled.ul`
   padding:15px;
   list-style: none;
   display: flex;
-  background-color: black;
+  background-color: #F0F0F3;
 
   @media only screen and (max-width: 500px) {
     display:none;
@@ -59,8 +72,24 @@ const NavigationList = styled.ul`
 const NavigationListItem = styled.li`
   font-weight: 600;
   font-size: 15px;
-  margin:0 16px;
-  color:white;
+  margin:0 10px;
+  color:black;
+  width:130px;
+  padding:15px;
+  text-align:center;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0,0,0,0.0);
+
+  &:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0 rgba(255,255,255,1),
+                0.5px 0.5px 0 rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.01);
+  }
 
   @media only screen and (max-width: 1440px) {
     font-size: 13px;
