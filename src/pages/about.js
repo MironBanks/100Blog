@@ -2,6 +2,7 @@ import React from "react"
 import styled from 'styled-components';
 import PageInfo from '../components/PageInfo/PageInfo';
 import Button from "../components/Button/Button";
+import Footer from "../components/Footer/Footer"
 
 const ContentWrapper = styled.div`
   width: 50%;
@@ -62,6 +63,7 @@ height: 64%;
   }
 `;
 
+
 const pageData = {
   title: 'about',
   paragraph: `There is only one rule: Code minimum an hour every day for the next 100 days.`,
@@ -101,6 +103,10 @@ const AboutPage = ({ data }) => (
     </ContentWrapper>
 
     <BlackRight></BlackRight>
+
+    <Footer>
+      <p>created by: mironbanks.com</p>
+    </Footer>
 
     <PageInfo title={pageData.title} paragraph={pageData.paragraph} />
   </>

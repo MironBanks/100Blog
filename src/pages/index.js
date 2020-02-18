@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import Image from 'gatsby-image';
 import Button from "../components/Button/Button";
+import Footer from "../components/Footer/Footer"
+
 
 const ContentWrapper = styled.div`
   width: 50%;
@@ -16,6 +18,7 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+
   border-radius: 10px;
 
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
@@ -25,7 +28,7 @@ const ContentWrapper = styled.div`
   h1 {
     font-size: 105px;
     margin: 0;
-    width: 60%;
+    width: 70%;
     padding:25px 0 25px auto;
     line-height: 0.9;
   }
@@ -36,7 +39,11 @@ const ContentWrapper = styled.div`
     font-size:23px;
   }
 
+
   @media only screen and (max-width: 1440px) {
+    top:150px;
+    width: 48%;
+
      h1 {
         font-size: 65px;
      }
@@ -47,37 +54,17 @@ const ContentWrapper = styled.div`
         width: 50%;
      }
   }
-`;
 
-const FooterContainer = styled.div`
-  position: absolute;
-  bottom:0;
-  left: 20px;
-  width:160px;
-  height: 160px;
-  background-color:black;
+  @media only screen and (max-width: 1024px) {
+    height:30vh;
+    top:55%;
+    width: 86%;
 
-  display: flex;
-  justify-content:center;
-  align-items:flex-end;
-  text-align:center;
-
-  p{
-    margin-bottom:10px;
-    width:100%;
-    color:white;
-    font-size:10px;
-  }
-
-  @media only screen and (max-width: 500px) {
-    height: 30px;
-    width:170px;
-
-    p{
-      margin-bottom:8px;
+    h1 {
+      width: 90%;
     }
   }
-`
+`;
 
 
 const ImageWrapper = styled(Image)`
@@ -91,6 +78,11 @@ const ImageWrapper = styled(Image)`
   @media only screen and (max-width: 1440px) {
     top:150px; 
   }
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 40vh;
+  }
 `;
 
 const IndexPage = ({ data }) => (
@@ -99,13 +91,13 @@ const IndexPage = ({ data }) => (
       <h1>One hundred days</h1>
       <p>
         Even if You are on the right track You'll get run over, if You just sit there.
-      </p>
+        </p>
       <Button>my last project</Button>
     </ContentWrapper>
-    <FooterContainer>
-      <p>created by: mironbanks.com</p>
-    </FooterContainer>
     <ImageWrapper fluid={data.file.childImageSharp.fluid} />
+    <Footer>
+      <p>created by: mironbanks.com</p>
+    </Footer>
   </>
 );
 

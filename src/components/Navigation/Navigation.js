@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const NavigationWrapper = styled.nav`
   position: fixed;
-  width:100%;
+  width:99%;
   top:20px;
   left:20px;
   display: flex;
@@ -18,9 +18,11 @@ const NavigationWrapper = styled.nav`
     color: inherit;
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 1024px) {
     left: 0;
-    top: 0;
+    top: 20px;
+    padding:0 5px;
+    width:100%;
   }
 
   
@@ -53,6 +55,11 @@ const Logo = styled.span`
     font-size: 15px;
     padding:13px;
   }
+
+  @media only screen and (max-width: 1024px) {
+   font-size: 13px;
+    padding:10px;
+  }
 `
 const NavigationList = styled.ul`
   padding:15px;
@@ -60,12 +67,12 @@ const NavigationList = styled.ul`
   display: flex;
   background-color: #F0F0F3;
 
-  @media only screen and (max-width: 500px) {
-    display:none;
-  }
-
   @media only screen and (max-width: 1440px) {
     padding:13px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding:10px;
   }
 `
 
@@ -93,6 +100,11 @@ const NavigationListItem = styled.li`
 
   @media only screen and (max-width: 1440px) {
     font-size: 13px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding:10px;
+    margin:0 0 0 10px;
   }
 `
 
