@@ -64,6 +64,7 @@ const ContentWrapper = styled.div`
       width: 90%;
     }
   }
+
 `;
 
 
