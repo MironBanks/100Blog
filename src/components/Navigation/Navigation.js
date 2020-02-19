@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import HamburgerToggleButton from "../HamburgerMenu/HamburgerToggleButton"
 
 const NavigationWrapper = styled.nav`
   position: fixed;
@@ -65,7 +66,7 @@ const NavigationList = styled.ul`
   padding:15px;
   list-style: none;
   display: flex;
-  background-color: #F0F0F3;
+  
 
   @media only screen and (max-width: 1440px) {
     padding:13px;
@@ -77,6 +78,7 @@ const NavigationList = styled.ul`
 `
 
 const NavigationListItem = styled.li`
+background-color: #F0F0F3;
   font-weight: 600;
   font-size: 15px;
   margin:0 10px;
@@ -113,6 +115,7 @@ const Navigation = () => (
     <Logo>
       <Link to="/">#100daysChallenge</Link>
     </Logo>
+    <HamburgerToggleButton />
     <NavigationList>
       <NavigationListItem>
         <Link to="/about">about</Link>

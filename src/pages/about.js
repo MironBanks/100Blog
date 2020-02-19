@@ -1,7 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
 import PageInfo from '../components/PageInfo/PageInfo';
-import Button from "../components/Button/Button";
 import Footer from "../components/Footer/Footer"
 
 const ContentWrapper = styled.div`
@@ -23,7 +22,7 @@ const ContentWrapper = styled.div`
   border: 1px solid rgba(0,0,0,0.0);
 
   h1 {
-    font-size: 64px;
+    font-size: 65px;
     margin: 0;
     width: 60%;
     padding:25px 0 25px auto;
@@ -38,14 +37,18 @@ const ContentWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1440px) {
+    top:140px;
+    width: 55%;
+    height:75vh;
+
      h1 {
-        font-size: 65px;
+        font-size: 25px;
+        width: 70%;
      }
 
      p {
-        margin: 20px 0 40px;
-        font-size:16px;
-        width: 50%;
+       font-size:13px;
+        width: 90%;
      }
   }
 `;
@@ -99,7 +102,6 @@ const AboutPage = ({ data }) => (
         <br />
         You’ll have a good reason to stop procrastinating and start coding every day.
       </p>
-      <Button>my last project</Button>
     </ContentWrapper>
 
     <BlackRight></BlackRight>

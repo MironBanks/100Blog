@@ -20,6 +20,10 @@ const Footer = styled.div`
     font-size:10px;
   }
 
+  @media only screen and (max-width: 1440px) {
+    display:none;
+  }
+
   @media only screen and (max-width: 500px) {
     height: 30px;
     width:170px;

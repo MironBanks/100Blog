@@ -16,6 +16,7 @@ height: 90%;
 
 @media only screen and (max-width: 1440px) {
     width:230px;
+    height: 85%;
   }
 `;
 
@@ -41,9 +42,10 @@ const ArticlesWrapper = styled.div`
   grid-gap: 120px;
 
   @media only screen and (max-width: 1440px) {
+    margin-top:30px;
     margin-left:23%;
     width:400px;
-    grid-gap: 70px;
+    grid-gap: 80px;
   }
 `;
 
